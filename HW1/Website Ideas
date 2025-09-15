@@ -1,0 +1,29 @@
+MathJax
+    What is it?
+    Why use it?
+    How to use it?
+
+Vim - What is it?
+    History
+    Why use it?
+    How to use it?
+
+Bash - What is it?
+    History
+        Early computer usage adopted the teleprinter and teletype as a way to interact with computers. A user would type a command, then the machine would respond. This is the origin of "conversing" with a computer, especially through text. As CRT displays came into use, replacing paper output in the 60s and 70s, the interactive terminal became the primary way to interact with computers before Guided User Interfaces, or GUIs, became common place.
+    BASH, or the Bourne Again Shell, was developed and released in 1989 for UNIX and UNIX-like Operating Systems as an alternative to proprietary "shells", which are the outermost user interfaces of operating systems. BASH is a command-line interpreter that functions as both an interactive shell and scripting language.
+    Why use it?
+        Although GUIs are more commonly used, terminals and BASH are powerful tools because they excel where GUIs fall short. Not only that, but BASH is the workhorse of the terminal world, and can be found and installed almost anywhere. Terminals are used by developers, sysadmins and other data professions.
+    How to use it?
+        If you use Linux, bash is likely already installed, and if not, it can be installed as an alternative. Mac uses ZSH, but it is similar.  For Windows, you must use Windows Subsystem for Linux, or WSL to install and use it. WSL is already set up for Windows 11, you just have to install a distro.
+        For file navigation, you use the commands
+
+Particle System
+    When I wrote this(for another class).
+    What it's written in.
+    What it does.
+
+Vectors
+    What are vectors
+    What they are used for
+    How to use them
