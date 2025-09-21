@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+</head>
+    
+    <body>
+        <header><h1>Number Guessing Game!</h1></header>
+    
+        <input id="inputGuess" type="text">
+        <button id="buttonGuess">Guess</button>
+    
+        <script src="script.js"></script>
+        <p id="guessMessage"></p>
+    </body>
+    
+    <footer>        
+        <hr>
+        <p>CST336 Internet Programming 2025 &copy;</p>
+        <p><strong>Disclaimer: </strong> The information in this webpage is fictitious.
+        <p>It is used for academic purposes only</p>
+    </footer>
+    </html>

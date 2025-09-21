@@ -1,0 +1,41 @@
+let inputGuess = document.querySelector("#inputGuess");
+let buttonGuess = document.querySelector("#buttonGuess");
+
+let correctNumber = Math.floor(Math.random * 99) + 1;
+
+let numberOfGuesses = 0;
+let totalWins = 0;
+let totalLosses = 0;
+
+function intro(){
+    alert("Guess a number between 1 and 99");
+}
+intro()
+
+function turnGreen(){//block of repeatable code ~= delayed execution
+    inputGuess.style.backgroundColor = "green";
+}
+function checkLoss(){
+    if(numberOfGuesses === 7){
+        alert("You Lost!");
+    }
+}
+
+//turnGreen();
+
+//buttonGuess.addEventListener('click', turnGreen()); the parenthesis on turnGreen calls it right away.
+//buttonGuess.addEventListener('click', turnGreen);
+buttonGuess.addEventListener('click', function () {
+    numberOfGuesses++;
+    if (+inputGuess.value > 0) {
+        inputGuess.style.backgroundColor = "lightgreen";
+    } else if(inputGuess.value <= 0 ) {
+        inputGuess.style.backgroundColor = "red";
+    }
+
+
+    document.querySelector("#guessMessage").textContent = `You guessed ${inputGuess.value}`  //template string
+
+    checkLoss();
+}
+);
