@@ -5,17 +5,19 @@ document.querySelector("button").addEventListener("click", gradeQuiz)//second ar
 
 displayQ4Choices();
 
+/*
+*/
 //Functions
 function displayQ4Choices(){
-    let q4ChoicesArray = ["Maine", "Rhode Island", "Maryland", "Delaware"] = _.shuffle(q4ChoicesArray);
+    let q4ChoicesArray = ["Maine", "Rhode Island", "Maryland", "Delaware"];
+    q4ChoicesArray = _.shuffle(q4ChoicesArray);
     for(let i = 0 ; i < q4ChoicesArray.length ; i++){
-        document.querySelector("#q4Choices").innerHTML = `<input type="radio"
-        name="q4" id="${q4ChoicesArray[i]}" value="${q4ChoicesArray[i]}"><label
-        for="${q4ChoicesArray[i]}">Rhode Island</label>`
+        document.querySelector("#q4Choices").innerHTML += `<input type="radio" name="q4" id="${q4ChoicesArray[i]}" value="${q4ChoicesArray[i]}"><label for="${q4ChoicesArray[i]}">Rhode Island</label>`;
     }
 }
 
 //Global Variables
+//...Why var instead of let?
 var score = 0;
 var attempts = 0;
 
@@ -56,7 +58,8 @@ function gradeQuiz() {
     //console.log(q1Response);//console debug for Question 1
     let q2Response = document.querySelector("#q2").value; //Question 2 value
     //console.log(q2Response);//console debug for Question 2
-    let q4Response = document.querySelector("input[name=q4]:checked").value;//accesses input-type name tag-attribute q4 for whether it's checked
+    //let q4Response = document.querySelector("input[name=q4]:checked").value;//accesses input-type name tag-attribute q4 for whether it's checked
+    console.log(q4Response);//console debug for Question 4
 
     //Grading Question 1
     if (q1Response == "sacramento") {
@@ -86,12 +89,14 @@ function gradeQuiz() {
         wrongAnswer(3);
     }
 
+    /*
     //Grading Question 4
     if(q4Response == "Rhode Island"){
         rightAnswer(4);
     } else {
         wrongAnswer(4);
     }
+    */
 
     document.querySelector("#totalScore").innerHTML = `Total Score: ${score}`//backticks are necessary for template literals
     document.querySelector("#totalAttempts").innerHTML = `Total Attempts: ${++attempts}`//backticks are necessary for template literals

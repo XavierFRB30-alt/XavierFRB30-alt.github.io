@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <h1> Sign Up Form </h1>
+
+    <fieldset>
+        <legend>Sign Up</legend>
+        First Name: <input type="text"><br>
+        Last Name: <input type="text"><br>
+        Email: <input type="text"><br>
+        Phone Number:<input type="text"><br><br>
+        <!--
+        1) City, longitude and latitude are updated when entering a zip code (10 pts)
+        -->
+        Zip Code: <input type="text"><br>
+        City:
+        <div id="city"></div>
+        Latitude:
+        <div id="latitude"></div>
+        Longitude:
+        <div id="longitude"></div>
+        <br>
+        State: <select id="statesSelect">
+            <!-- <option id="CA" value="CA"></option> -->
+        </select><br>
+        Select a County: <select></select><br>
+
+        Desired Username: <input type="text"><br>
+        Password: <input type="password"><br>
+        Type Password Again: <input type="password"><br>
+        <input type="submit" value="Sign up!">
+    </fieldset>
+
+
+</body>
+
+</html>
